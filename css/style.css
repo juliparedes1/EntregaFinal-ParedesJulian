@@ -120,6 +120,50 @@ main {
   nav {
     display: none;
   }
+  .footerLinks {
+    display: none;
+  }
+  .footerRedes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .boxCard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "card1" "card2" "card3";
+    margin: 20px;
+    gap: 40px;
+  }
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .presentacion_cajas {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .presentacion h2 {
+    background-color: #5ba39a;
+    border-radius: 20px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+  }
+}
+@media (max-width: 375px) {
+  .titulo-h1 {
+    font-size: 15px;
+  }
+  .titulo {
+    width: 30%;
+  }
+  .mainIndex {
+    min-height: 170vh;
+  }
 }
 /*============================= FOOTER============*/
 footer {
@@ -159,7 +203,7 @@ header nav ul li a, footer div ul li a {
 /*============================= PAGINA NOSOTROS ============*/
 #mainNosotros {
   background-color: #e5d6c6;
-  min-height: 120vh;
+  min-height: 300vh;
 }
 
 .quienesSomos h1 {
@@ -202,7 +246,7 @@ header nav ul li a, footer div ul li a {
 .presentacion h2, .presentacion h3 {
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #f86095;
+  color: #000000;
   margin: 20px 40px 20px;
 }
 
@@ -214,6 +258,51 @@ header nav ul li a, footer div ul li a {
   border: 2px solid rgb(0, 0, 0);
   height: 200px;
   overflow: auto;
+}
+
+.nuestroEquipo {
+  background-color: #5ba39a;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.Contenedor-h2NuestroEquipo {
+  display: flex;
+  justify-content: center;
+}
+
+.cajaNuestroEquipo {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.boxCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "card1" "card2" "card3";
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card {
+  border-radius: 20px;
 }
 
 /*============================= PAGINA Contactanos ============*/
