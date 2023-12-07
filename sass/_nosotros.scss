@@ -1,0 +1,111 @@
+$verde :#5ba39a;
+
+#mainNosotros{
+    background-color: #e5d6c6;
+    min-height: 190vh;    
+}
+.quienesSomos h1{
+    background-color: $verde;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.quienesSomos{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.quienesSomos .presentacion_cajas p{
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30%;
+    padding: 40px;
+    border: 2px solid black;
+    height: 200px;
+    overflow: auto;
+
+}
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.presentacion_cajas{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    h3{
+        width: 50%;
+    }
+    p  {
+        background-color: rgb(255, 255, 255);
+        border-radius: 30%;
+        padding: 20px;
+        width: 200px;
+        border: 2px solid rgb(0, 0, 0);
+        height: 200px;
+        overflow: auto;
+    
+    }
+}
+
+
+.presentacion h2, .presentacion h3 {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    margin: 20px 40px 20px ;
+    
+
+}
+
+
+
+.cajaNuestroEquipo{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .Contenedor-h2NuestroEquipo{
+        display: flex;
+        justify-content: center;
+        .nuestroEquipo{
+            background-color: $verde;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px ;
+            padding: 20px;
+        }
+    }
+}
+
+.boxCard{
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr   ;
+    grid-template-rows: 1fr  ;
+    grid-template-areas: 
+    "card1 card2 card3";
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+
+.card{
+    border-radius: 20px;
+}

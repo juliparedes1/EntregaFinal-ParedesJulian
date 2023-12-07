@@ -1,0 +1,29 @@
+
+header{
+    background-color: #fca55c ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+.logo{
+    width: 50px;
+    
+}
+
+
+
+header nav ul li {
+    display:inline-flex;
+    margin: 20px;
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 20%;
+}
+
+header nav ul  :hover{
+    background-color: rgb(103, 170, 173);
+    color: white;
+    transition: 200ms;
+}

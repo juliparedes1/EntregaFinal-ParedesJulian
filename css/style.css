@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:wght@300&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto Mono", monospace;
-}
-
-/*============================= HEADER ============*/
 header {
   background-color: #fca55c;
   display: flex;
@@ -26,146 +18,11 @@ header nav ul li {
 }
 
 header nav ul :hover {
-  background-color: #5ba39a;
+  background-color: rgb(103, 170, 173);
   color: white;
   transition: 200ms;
 }
 
-/*============================= MAIN============*/
-main {
-  min-height: 100vh;
-}
-
-.mainIndex {
-  background-image: url(../images/banner.jpg);
-  background-repeat: no-repeat;
-}
-
-.container-fluid {
-  display: none;
-}
-
-.mainButtons {
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-}
-
-.mainButtons_links {
-  display: flex;
-  margin: 30px 30px 30px 30px;
-  background-color: rgba(75, 184, 173, 0.561);
-  padding: 30px;
-  border-radius: 30%;
-  justify-content: center;
-  align-items: center;
-}
-
-.mainButtons :hover {
-  background-color: rgb(143, 130, 238);
-}
-
-.dropdown {
-  display: none;
-}
-
-.mainButtons_links a {
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: none;
-}
-
-.tituloYParrafo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.titulo {
-  background-color: #5ba39a;
-  width: 20%;
-  border-radius: 20px;
-  padding: 20px;
-  margin-top: 30px;
-}
-
-.titulo-h1 {
-  display: flex;
-  justify-content: center;
-}
-
-.mainButtons_parrafo {
-  background-color: rgba(38, 126, 202, 0.814);
-  border-radius: 20px;
-  padding: 10px;
-  margin: 100px 30px 30px 30px;
-  width: 60%;
-  color: rgb(0, 0, 0);
-}
-
-/*=================== MEDIAQueries =====================*/
-@media (max-width: 768px) {
-  .titulo-h1 {
-    font-size: 20px;
-  }
-  .dropdown {
-    display: contents;
-  }
-  nav {
-    display: none;
-  }
-  .footerLinks {
-    display: none;
-  }
-  .footerRedes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .boxCard {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "card1" "card2" "card3";
-    margin: 20px;
-    gap: 40px;
-  }
-  .presentacion {
-    display: flex;
-    flex-direction: column;
-  }
-  .presentacion_cajas {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .presentacion h2 {
-    background-color: #5ba39a;
-    border-radius: 20px;
-    padding: 20px;
-    color: rgb(0, 0, 0);
-  }
-}
-@media (max-width: 375px) {
-  .titulo-h1 {
-    font-size: 15px;
-  }
-  .titulo {
-    width: 30%;
-  }
-  .mainIndex {
-    min-height: 170vh;
-  }
-}
-/*============================= FOOTER============*/
 footer {
   background-color: #faf2e7;
   display: flex;
@@ -194,16 +51,9 @@ footer ul li:hover {
   width: 30px;
 }
 
-/*============================= Barras de links============*/
-header nav ul li a, footer div ul li a {
-  text-decoration: none;
-  margin: 20px;
-}
-
-/*============================= PAGINA NOSOTROS ============*/
 #mainNosotros {
   background-color: #e5d6c6;
-  min-height: 300vh;
+  min-height: 190vh;
 }
 
 .quienesSomos h1 {
@@ -244,18 +94,9 @@ header nav ul li a, footer div ul li a {
   align-items: center;
   flex-direction: column;
 }
-
-.presentacion h2, .presentacion h3 {
-  font-size: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #000000;
-  margin: 20px 40px 20px;
-}
-
 .presentacion_cajas h3 {
   width: 50%;
 }
-
 .presentacion_cajas p {
   background-color: rgb(255, 255, 255);
   border-radius: 30%;
@@ -266,17 +107,11 @@ header nav ul li a, footer div ul li a {
   overflow: auto;
 }
 
-.nuestroEquipo {
-  background-color: #5ba39a;
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.Contenedor-h2NuestroEquipo {
-  display: flex;
-  justify-content: center;
+.presentacion h2, .presentacion h3 {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  margin: 20px 40px 20px;
 }
 
 .cajaNuestroEquipo {
@@ -285,12 +120,23 @@ header nav ul li a, footer div ul li a {
   align-items: center;
   flex-direction: column;
 }
+.cajaNuestroEquipo .Contenedor-h2NuestroEquipo {
+  display: flex;
+  justify-content: center;
+}
+.cajaNuestroEquipo .Contenedor-h2NuestroEquipo .nuestroEquipo {
+  background-color: #5ba39a;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+}
 
 .boxCard {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "card1" "card2" "card3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "card1 card2 card3";
   gap: 40px;
   margin-top: 30px;
 }
@@ -311,7 +157,6 @@ header nav ul li a, footer div ul li a {
   border-radius: 20px;
 }
 
-/*============================= PAGINA Contactanos ============*/
 .cajaContactanos {
   background-color: #fca55c;
   border: 2px solid rgb(0, 0, 0);
@@ -363,7 +208,6 @@ form input {
   height: 400px;
 }
 
-/*============================= PAGINA Clientes ============*/
 #mainClientes {
   background-image: linear-gradient(60deg, #c2f7d3, #5ba39a);
   min-height: 110vh;
@@ -408,7 +252,6 @@ form input {
   border-radius: 80%;
 }
 
-/*============================= PAGINA TIENDA NUEVA============*/
 #mainTienda {
   background-color: #e5d6c6;
   position: relative;
@@ -437,7 +280,6 @@ form input {
   justify-content: center;
   border: dashed 1px cadetblue;
 }
-
 .tiendainfo a {
   text-decoration: none;
   font-size: 25px;
@@ -517,5 +359,155 @@ form input {
 .tiendaInfo16 {
   grid-area: tiendaInfo16;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+/*============================= HEADER ============*/
+/*============================= MAIN============*/
+main {
+  min-height: 100vh;
+}
+
+.mainIndex {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+}
+
+.container-fluid {
+  display: none;
+}
+
+.mainButtons {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.mainButtons .mainButtons_links {
+  display: flex;
+  margin: 30px 30px 30px 30px;
+  background-color: #5ba39a;
+  padding: 30px;
+  border-radius: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.mainButtons .mainButtons_links a {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+.mainButtons :hover {
+  background-color: rgb(143, 130, 238);
+}
+
+.dropdown {
+  display: none;
+}
+
+.tituloYParrafo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tituloYParrafo .titulo {
+  background-color: #5ba39a;
+  width: 30%;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.tituloYParrafo .titulo .titulo-h1 {
+  display: flex;
+  justify-content: center;
+}
+.tituloYParrafo .mainButtons_parrafo {
+  background-color: rgba(38, 126, 202, 0.814);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 100px 30px 30px 30px;
+  width: 60%;
+  color: rgb(0, 0, 0);
+}
+
+/*=================== MEDIAQueries =====================*/
+@media (max-width: 768px) {
+  .titulo-h1 {
+    font-size: 20px;
+  }
+  .dropdown {
+    display: contents;
+  }
+  nav {
+    display: none;
+  }
+  .footerLinks {
+    display: none;
+  }
+  .footerRedes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .boxCard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "card1" "card2" "card3";
+    margin: 20px;
+    gap: 40px;
+  }
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .presentacion_cajas {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .presentacion h2 {
+    background-color: #5ba39a;
+    border-radius: 20px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+  }
+}
+@media (max-width: 375px) {
+  .titulo-h1 {
+    font-size: 13px;
+  }
+  .titulo {
+    width: 100%;
+    padding: 10% 20%;
+  }
+  .mainIndex {
+    min-height: 170vh;
+  }
+}
+/*============================= FOOTER============*/
+/*============================= Barras de links============*/
+header nav ul li a, footer div ul li a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+/*============================= PAGINA NOSOTROS ============*/
+/*============================= PAGINA Contactanos ============*/
+/*============================= PAGINA Clientes ============*/
+/*============================= PAGINA TIENDA NUEVA============*/
 
 /*# sourceMappingURL=style.css.map */

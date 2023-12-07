@@ -1,0 +1,34 @@
+
+footer{
+    background-color: #faf2e7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    
+
+}
+
+footer div {
+    
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+footer ul li {
+    display: block;
+    margin-top: 5px;
+}
+
+footer ul li:hover{
+    background-color: rgb(143, 130, 238) ;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+
+.Redes{
+    width: 30px;
+    
+}

@@ -1,0 +1,57 @@
+
+$verde :#5ba39a;
+
+
+.cajaContactanos{
+    background-color: #fca55c;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-left: 20px;
+
+}
+
+.tituloContactanos{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.tituloContactanos h1{
+    background-color: $verde;
+    display: flex;
+    width: 50%;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+form label, form textarea{
+    margin: 20px;
+    text-align: center;
+}
+form input{
+    margin: 20px;
+    display: block;
+
+    
+}
+
+#mainContactanos aside iframe{
+    margin-left: 20px;
+
+}
+#mainContactanos{
+    position: relative;
+    min-height: 100vh;
+}
+
+.Contactanos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ContactanosIframe iframe{
+    width: 400px;
+    height: 400px;
+
+}

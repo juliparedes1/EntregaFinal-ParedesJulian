@@ -1,6 +1,15 @@
 
+@use "header";
+@use "footer";
+@use "nosotros";
+@use "contactanos";
+@use "clientes";
+@use "tienda";
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:wght@300&display=swap');
 
+
+$verde :#5ba39a;
 
 *{
     box-sizing: border-box;
@@ -12,35 +21,6 @@ font-family: 'Roboto Mono', monospace;
 }
 
 /*============================= HEADER ============*/
-
-header{
-    background-color: #fca55c ;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    
-}
-
-.logo{
-    width: 50px;
-    
-}
-
-
-
-header nav ul li {
-    display:inline-flex;
-    margin: 20px;
-    border: 2px rgb(0, 0, 0) solid;
-    border-radius: 20%;
-}
-
-header nav ul  :hover{
-    background-color: #5ba39a;
-    color: white;
-    transition: 200ms;
-}
 
 
 
@@ -68,17 +48,25 @@ main{
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    
+    .mainButtons_links{
+        display: flex;
+        margin: 30px 30px 30px 30px;
+        background-color: $verde;
+        padding: 30px;
+        border-radius: 30%;
+        justify-content: center;
+        align-items: center;
+    
+        a{
+            color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        }
+    }
 }
 
-.mainButtons_links{
-    display: flex;
-    margin: 30px 30px 30px 30px;
-    background-color: rgba(75, 184, 173, 0.561);
-    padding: 30px;
-    border-radius: 30%;
-    justify-content: center;
-    align-items: center;
-}
 
 .mainButtons  :hover{
     background-color: rgb(143, 130, 238);
@@ -88,43 +76,39 @@ main{
     display: none;
 }
 
-.mainButtons_links a {
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-}
+
 
 .tituloYParrafo{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    .titulo{
+        background-color: $verde;
+        width: 30%;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 30px;
+        .titulo-h1{
+            display: flex;
+            justify-content: center;
+            
+        }
+        
+    }
+    
+    .mainButtons_parrafo{
+        background-color: rgba(38, 126, 202, 0.814);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 100px 30px 30px 30px;
+        width: 60%;
+        color: rgb(0, 0, 0);
+    }
 }
 
-.titulo{
-    background-color: #5ba39a;
-    width: 20%;
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 30px;
 
-}
 
-.titulo-h1{
-    display: flex;
-    justify-content: center;
-
-}
-
-.mainButtons_parrafo{
-    background-color: rgba(38, 126, 202, 0.814);
-    border-radius: 20px;
-    padding: 10px;
-    margin: 100px 30px 30px 30px;
-    width: 60%;
-    color: rgb(0, 0, 0);
-}
 /*=================== MEDIAQueries =====================*/
 
 @media (max-width:768px){
@@ -179,7 +163,7 @@ main{
     }
     
     .presentacion h2{
-        background-color: #5ba39a;
+        background-color: $verde;
         border-radius: 20px;
         padding: 20px;
         color: rgb(0, 0, 0);
@@ -190,10 +174,11 @@ main{
 
 @media (max-width:375px){
     .titulo-h1{
-        font-size: 15px;
+        font-size: 13px;
     }
     .titulo{
-        width: 30%;
+        width: 100%;
+        padding: 10% 20%;
     }
     .mainIndex {
         min-height: 170vh;
@@ -210,40 +195,6 @@ main{
 
 /*============================= FOOTER============*/
 
-footer{
-    background-color: #faf2e7;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: auto;
-    
-
-}
-
-footer div {
-    
-    justify-content: space-around;
-    align-items: center;
-    
-}
-
-footer ul li {
-    display: block;
-    margin-top: 5px;
-}
-
-footer ul li:hover{
-    background-color: rgb(143, 130, 238) ;
-    border-radius: 10px;
-    transition: 300ms;
-}
-
-
-.Redes{
-    width: 30px;
-    
-}
-
 /*============================= Barras de links============*/
 
 header nav ul li a, footer div ul li a {
@@ -256,338 +207,19 @@ header nav ul li a, footer div ul li a {
 
 
 /*============================= PAGINA NOSOTROS ============*/ 
-#mainNosotros{
-    background-color: #e5d6c6;
-    min-height: 300vh;    
-}
-.quienesSomos h1{
-    background-color: #5ba39a;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 20px;
-}
-.quienesSomos{
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-.quienesSomos .presentacion_cajas p{
-    width: auto;
-    background-color: rgb(255, 255, 255);
-    border-radius: 30%;
-    padding: 40px;
-    border: 2px solid black;
-    height: 200px;
-    overflow: auto;
 
-}
-.presentacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.presentacion_cajas{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-
-.presentacion h2, .presentacion h3 {
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000000;
-    margin: 20px 40px 20px ;
-    
-
-}
-.presentacion_cajas h3{
-    width: 50%;
-}
-.presentacion_cajas p  {
-    background-color: rgb(255, 255, 255);
-    border-radius: 30%;
-    padding: 20px;
-    width: 200px;
-    border: 2px solid rgb(0, 0, 0);
-    height: 200px;
-    overflow: auto;
-
-}
-
-.nuestroEquipo{
-    background-color: #5ba39a;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px ;
-    padding: 20px;
-}
-
-.Contenedor-h2NuestroEquipo{
-    display: flex;
-    justify-content: center;
-}
-
-.cajaNuestroEquipo{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.boxCard{
-    display: grid;
-    grid-template-columns: 1fr    ;
-    grid-template-rows: 1fr 1fr 1fr   ;
-    grid-template-areas: 
-    "card1"
-    "card2" 
-    "card3";
-    gap: 40px;
-    margin-top: 30px;
-}
-
-.card1{
-    grid-area: card1;
-}
-.card2{
-    grid-area: card2;
-}
-.card3{
-    grid-area: card3;
-}
-
-.card{
-    border-radius: 20px;
-}
 
 /*============================= PAGINA Contactanos ============*/
 
 
-.cajaContactanos{
-    background-color: #fca55c;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    margin-left: 20px;
-
-}
-
-.tituloContactanos{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    
-}
-.tituloContactanos h1{
-    background-color: #5ba39a;
-    display: flex;
-    width: 50%;
-    border-radius: 20px;
-    justify-content: center;
-}
-
-form label, form textarea{
-    margin: 20px;
-    text-align: center;
-}
-form input{
-    margin: 20px;
-    display: block;
-
-    
-}
-
-#mainContactanos aside iframe{
-    margin-left: 20px;
-
-}
-#mainContactanos{
-    position: relative;
-    min-height: 100vh;
-}
-
-.Contactanos{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.ContactanosIframe iframe{
-    width: 400px;
-    height: 400px;
-
-}
 
 
 
 /*============================= PAGINA Clientes ============*/
 
-#mainClientes{
-    background-image: linear-gradient( 60deg, #c2f7d3,#5ba39a);
-    min-height: 110vh;
-}
-
-#mainClientes h1{
-
-    font-size: 40px;
-    color: #f86095;
-    background-color:   rgba(128, 128, 128, 0.549)  ;
-    border-radius: 20px;
-    text-align: center;
-    margin: 10px 100px 30px;
-    
-}
-
-#mainClientes section article{
-    display: block;
-    text-align: center;
-    
-    
-
-}
-
-#mainClientes section article div {
-    
-    margin-top: 10px;
-    
-
-}
-
-.Clientes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.carrusel{
-    width: 80%;
-    height: 400px;
-}
-.d-block {
-    height: 500px
-}
-
-.carousel-caption{
-    background-color: #9500d092;
-    border-radius: 80%;
-}
 
 /*============================= PAGINA TIENDA NUEVA============*/
-#mainTienda{
-    background-color: #e5d6c6;
-    position:relative
 
-}
-
-#mainTienda h1 {
-    color: #f86095;
-    font-size: 40px;
-    text-align: center;
-    
-}
-
-.TiendaNueva{
-    display: grid;
-    grid-template-columns: repeat(4, 0.5fr);
-    grid-template-rows: repeat(4, 1fr);
-    padding: 30px;
-    grid-template-areas: 
-    "tiendaInfo1 tiendaInfo2 tiendaInfo3 tiendaInfo4"
-    "tiendaInfo5 tiendaInfo6 tiendaInfo7 tiendaInfo8"
-    "tiendaInfo9 tiendaInfo10 tiendaInfo11 tiendaInfo12"
-    "tiendaInfo13 tiendaInfo14 tiendaInfo15 tiendaInfo16"
-    ;
-    border: 2px dashed cadetblue;
-    margin: 30px;
-}
-
-.tiendainfo{
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: dashed 1px cadetblue;
-}
-
-.tiendainfo a {
-    text-decoration: none;
-    font-size: 25px;
-}
-.tiendainfo a:hover {
-    background-color: #5ba39a;
-    border-radius: 20px;
-    padding: 10px;
-    transition: 200ms;
-}
-
-.tiendaInfo1{
-    grid-area: tiendaInfo1;
-}
-.tiendaInfo2{
-    grid-area: tiendaInfo2;
-}
-.tiendaInfo3{
-    grid-area: tiendaInfo3;
-}
-.tiendaInfo4{
-    grid-area: tiendaInfo4;
-}
-.tiendaInfo5{
-    grid-area: tiendaInfo5;
-}
-.tiendaInfo6{
-    grid-area: tiendaInfo6;
-}
-.tiendaInfo7{
-    grid-area: tiendaInfo7;
-}
-
-.tiendaInfo8{
-    grid-area: tiendaInfo8;
-}
-
-.tiendaInfo9{
-    grid-area: tiendaInfo9;
-}
-
-.tiendaInfo10{
-    grid-area: tiendaInfo10;
-}
-
-.tiendaInfo4{
-    grid-area: tiendaInfo4;
-}
-
-.tiendaInfo11{
-    grid-area: tiendaInfo11;
-}
-
-.tiendaInfo12{
-    grid-area: tiendaInfo12;
-}
-
-.tiendaInfo13{
-    grid-area: tiendaInfo13;
-}
-
-.tiendaInfo14{
-    grid-area: tiendaInfo14;
-}
-
-.tiendaInfo15{
-    grid-area: tiendaInfo15;
-}
-.tiendaInfo16{
-    grid-area: tiendaInfo16;
-}
 
 
 
