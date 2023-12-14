@@ -13,12 +13,14 @@ footer div {
     
     justify-content: space-around;
     align-items: center;
-    
+    text-decoration: none;
 }
 
 footer ul li {
     display: block;
     margin-top: 5px;
+    list-style: none;
+    
 }
 
 footer ul li:hover{
@@ -27,8 +29,15 @@ footer ul li:hover{
     transition: 300ms;
 }
 
+footer div a{
+    text-decoration: none;
+}
 
 .Redes{
     width: 30px;
     
+    
+}
+.footerRedes{
+    list-style: none;
 }

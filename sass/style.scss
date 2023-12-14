@@ -169,6 +169,14 @@ main{
         color: rgb(0, 0, 0);
     }
 
+    /*CONTACTANOS*/
+    .Contactanos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
 
 }
 
@@ -183,17 +191,36 @@ main{
     .mainIndex {
         min-height: 170vh;
     }
+
+    /*TIENDA*/
+    
+    .tarjetas-tienda{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .tiendaNueva{
+        display: none;
+    }
+    #mainTienda{
+        min-height: 200vh;
+    }
+    /*CLIENTES*/
+    .d-block{
+        height: 400px;
+    }
+
+    /*CONTACTANOS*/
+    .contactanos iframe{
+        height: 180px;
+        width: 180px;
+    }
 }
 
 
-
-
-
-
-
-
-
-/*============================= FOOTER============*/
 
 /*============================= Barras de links============*/
 
@@ -201,26 +228,6 @@ header nav ul li a, footer div ul li a {
     text-decoration: none;
     margin: 20px
 }
-
-
-
-
-
-/*============================= PAGINA NOSOTROS ============*/ 
-
-
-/*============================= PAGINA Contactanos ============*/
-
-
-
-
-
-/*============================= PAGINA Clientes ============*/
-
-
-/*============================= PAGINA TIENDA NUEVA============*/
-
-
 
 
 

@@ -2,9 +2,8 @@ $verde :#5ba39a;
 
 #mainTienda{
     background-color: #e5d6c6;
-    position:relative
-
-    
+    position: relative;
+    min-height: 120vh;
 }
 
 #mainTienda h1 {
@@ -14,7 +13,7 @@ $verde :#5ba39a;
     
 }
 
-.TiendaNueva{
+.tiendaNueva{
     display: grid;
     grid-template-columns: repeat(4, 0.5fr);
     grid-template-rows: repeat(4, 1fr);
@@ -25,7 +24,7 @@ $verde :#5ba39a;
     "tiendaInfo9 tiendaInfo10 tiendaInfo11 tiendaInfo12"
     "tiendaInfo13 tiendaInfo14 tiendaInfo15 tiendaInfo16"
     ;
-    border: 2px dashed cadetblue;
+    border: 2px dashed rgb(95, 158, 160);
     margin: 30px;
 }
 
@@ -34,7 +33,7 @@ $verde :#5ba39a;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: dashed 1px cadetblue;
+    border: dashed 1px rgb(95, 158, 160);
 
     a {
         text-decoration: none;
@@ -110,4 +109,8 @@ $verde :#5ba39a;
 }
 .tiendaInfo16{
     grid-area: tiendaInfo16;
+}
+
+.tarjetas-tienda{
+    display: none;
 }
