@@ -1,0 +1,112 @@
+/*=================== MEDIAQueries =====================*/
+
+$verde :#5ba39a;
+
+@media (max-width:768px){
+    .titulo-h1 {
+        font-size: 20px;
+    }
+
+    .dropdown{
+        display: contents !important;
+    }
+    
+    nav{
+        display: none
+    }
+
+    .footerLinks{
+        display: none;
+    }
+    
+    .footerRedes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .boxCard{
+        display: grid ;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        ;
+        margin:20px;
+        gap:40px;
+    }
+
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .presentacion_cajas {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .presentacion h2{
+        background-color: $verde;
+        border-radius: 20px;
+        padding: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+    /*CONTACTANOS*/
+    .Contactanos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    aside iframe{
+        height: 180px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 425px){
+    .titulo-h1{
+        font-size: 13px;
+    }
+    .titulo{
+        width: 100%;
+        padding: 10% 20%;
+    }
+    .mainIndex {
+        min-height: 170vh;
+    }
+    .dropdown{
+        display: contents;
+    }
+
+    /*TIENDA*/
+    
+    .tarjetas-tienda{
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .tiendaNueva{
+        display:none ;
+    }
+    #mainTienda{
+        min-height: 200vh;
+    }
+    /*CLIENTES*/
+    .d-block{
+        height: 400px;
+    }   
+}

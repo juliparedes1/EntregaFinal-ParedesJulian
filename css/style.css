@@ -383,8 +383,6 @@ form input {
   font-family: "Roboto Mono", monospace;
 }
 
-/*============================= HEADER ============*/
-/*============================= MAIN============*/
 main {
   min-height: 100vh;
 }
@@ -457,13 +455,18 @@ main {
   color: rgb(0, 0, 0);
 }
 
+header nav ul li a, footer div ul li a {
+  text-decoration: none;
+  margin: 20px;
+}
+
 /*=================== MEDIAQueries =====================*/
 @media (max-width: 768px) {
   .titulo-h1 {
     font-size: 20px;
   }
   .dropdown {
-    display: contents;
+    display: contents !important;
   }
   nav {
     display: none;
@@ -508,8 +511,12 @@ main {
     justify-content: center;
     align-items: center;
   }
+  aside iframe {
+    height: 180px;
+    width: 180px;
+  }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .titulo-h1 {
     font-size: 13px;
   }
@@ -519,6 +526,9 @@ main {
   }
   .mainIndex {
     min-height: 170vh;
+  }
+  .dropdown {
+    display: contents;
   }
   /*TIENDA*/
   .tarjetas-tienda {
@@ -539,16 +549,6 @@ main {
   .d-block {
     height: 400px;
   }
-  /*CONTACTANOS*/
-  .contactanos iframe {
-    height: 180px;
-    width: 180px;
-  }
-}
-/*============================= Barras de links============*/
-header nav ul li a, footer div ul li a {
-  text-decoration: none;
-  margin: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
