@@ -3,7 +3,7 @@ $verde :#5ba39a;
 #mainTienda{
     background-color: #e5d6c6;
     position: relative;
-    min-height: 120vh;
+    min-height: 100vh;
 }
 
 #mainTienda h1 {
@@ -12,7 +12,14 @@ $verde :#5ba39a;
     text-align: center;
     
 }
+.card{
+    width: 18rem;
+}
 
+.btn{
+    background-color: $verde;
+    border: #5ba39a;
+}
 .tiendaNueva{
     display: grid;
     grid-template-columns: repeat(4, 0.5fr);

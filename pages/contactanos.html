@@ -9,13 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Primera Entrega Julian Paredes</title>
+    <link rel="shortcut icon" href="../images/MdiRhombusOutline.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
     <header>
         <div>
-            <a href="/index.html"><img src="../images/icon.svg" alt="logo" class="logo" /></a>
+            <a href="../index.html"><img src="../images/icon.svg" alt="logo" class="logo"></a>
         </div>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -24,35 +25,35 @@
             </button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
-                <li><a class="dropdown-item" href="../pages/contactanos.html">Contactanos</a></li>
-                <li><a class="dropdown-item" href="../pages/clientes.html">Clientes</a></li>
-                <li><a class="dropdown-item" href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a class="dropdown-item" href="../pages/tiendaNueva.html">Tienda</a></li>
+                <li><a class="dropdown-item" href="contactanos.html">Contactanos</a></li>
+                <li><a class="dropdown-item" href="clientes.html">Clientes</a></li>
+                <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item" href="tiendaNueva.html">Tienda</a></li>
             </ul>
         </div>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/clientes.html">clientes</a></li>
-                <li><a href="../pages/contactanos.html">Contactanos</a></li>
-                <li><a href="../pages/tiendaNueva.html">Tienda</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="clientes.html">clientes</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <li><a href="tiendaNueva.html">Tienda</a></li>
             </ul>
         </nav>
     </header>
     <main id="mainContactanos">
-        <article class="tituloContactanos">
-            <h1>Contactanos</h1>
-        </article>
+        <div class="tituloContactanos">
+                <h1>Contactanos</h1>
+        </div>
         <section class="contactanos">
             <article class="contactanosForm contactanosBoxes">
-                <form action="#">
+                <form  class="formu" action="#">
                     <label for="Nombre"> Nombre: </label>
                     <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" />
                     <label for="Apellido">Apellido:</label>
                     <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" />
-                    <label for="Mensaje:">Mensaje:</label>
-                    <br />
+                    <label for="Mensaje:" class="formLabel">Mensaje:</label>
+                    
                     <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui"></textarea>
                     <input type="submit" name="Enviar" id="Enviar" />
                     <input type="reset" name="Restaurar" id="Restaurar" />
@@ -75,25 +76,25 @@
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/clientes.html">clientes</a></li>
+                <li><a href="../pages/clientes.html">Clientes</a></li>
                 <li><a href="../pages/contactanos.html">Contactanos</a></li>
                 <li><a href="../pages/tiendaNueva.html">Tienda</a></li>
             </ul>
         </div>
         <article class="footerRedes">
             <div>
-                <a href="#" target="_blank">
+                <a href="https://www.facebook.com/" target="_blank" class="item">
                     <img src="../images/RiFacebookBoxFill.png " alt="RiFacebookBoxFill" class="Redes">
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.instagram.com/" target="_blank" class="item">
                     <img src="../images/PhInstagramLogoFill.png" alt="Instagram" class="Redes">
                 </a>
             </div>
             <div>
-                <a href="#" target="_blank">
+                <a href="https://www.reddit.com/" target="_blank" class="item">
                     <img src="../images/BiReddit.png" alt="Reddit" class="Redes">
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://twitter.com/home" target="_blank" class="item">
                     <img src="../images/MdiTwitter.png" alt="Twitter" class="Redes">
                 </a>
             </div>

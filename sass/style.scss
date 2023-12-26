@@ -1,14 +1,14 @@
 
 $verde :#5ba39a;
 
-@use "header";
-@use "footer";
-@use "nosotros";
-@use "contactanos";
-@use "clientes";
-@use "tienda";
-@use "reset_y_main";
-@use "media";
+@import "header";
+@import "footer";
+@import "nosotros";
+@import "contactanos";
+@import "clientes";
+@import "tienda";
+@import "reset_y_main";
+@import "media";
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:wght@300&display=swap');
 
